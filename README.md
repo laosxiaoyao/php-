@@ -12,3 +12,7 @@ PHP_ARG_WITH(common, for common support,
 6. ./configure --with-php-config=/usr/local/php/bin/php-config
 7. make && make install
 8. 生成common.so  加入 php.ini中
+9. 测试
+10. var_dump((date('Y-m-d',c_strtotime('2019-01-02'))));
+11. var_dump(c_getTwoDateDays("2019-07-02","2019-07-05"));
+12. print_r(c_getTwoDates('2019-07-01','2019-07-30'));
